@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+#Progress {
+  width: 100%;
+  background-color: grey;
+}
+
+#Bar {
+  width: 1%;
+  height: 30px;
+  background-color: pink;
+}
+
+.a {
+  font-family: serif;
+  text-align: center;
+}
+</style>
+
+  <body background="bg.jpg">
+      <header class="full-background">
+          <div class="jumbotron text-center">
+            <div class="a">
+              <h1>Hi, saya Ersal ! ^^</h1>
+              <p>Ini adalah website resmi ITK</p>
+              <p><b>Klik "MULAI"</b></p>
+            </div>
+          </div>
+<div class="container">
+<div id="Progress">
+  <div id="Bar"></div>
+</div>
+</div>
+
+<br>
+<button onclick="move()">MULAI</button>
+
+<script>
+function move() {
+  var elem = document.getElementById("Bar");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+  10000, () => {
+      let oke = confirm('redirected to itk.ac.id?');
+      if(oke){
+          window.location.href = 'http://itk.ac.id';
+}
+</script>
+
+</body>
+</html>
